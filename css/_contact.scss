@@ -1,0 +1,99 @@
+.form {
+  .form_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  form {
+    width: 90%;
+    max-width: 600%;
+  }
+  .contact_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #333;
+  }
+  label {
+    gap: 4px;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #333;
+    cursor: text;
+    transition: 0.2s;
+  }
+  button {
+    font-family: $body-font;
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background-color: $primary-color;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  button :hover {
+    background-color: black;
+    color: white;
+  }
+
+  input:focus ~ label,
+  input:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
+    top: -35px;
+    font-size: 14px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    .input-group {
+      flex-basis: 48%;
+    }
+  }
+
+  .contact_image {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_data {
+    margin-bottom: 30px;
+    .contact_title {
+      font-family: $title-font;
+      font-size: 3rem;
+    }
+    .contact_sub-title {
+      font-family: $body-font;
+    }
+    .contact_description {
+      font-family: $body-font;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+/* Home ====================================================*/
+.home {
+  .home_img {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    align-content: center;
+    gap: 3rem;
+  }
+
+  .home_data {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    // text-align: center;
+    font-family: $title-font;
+  }
+
+  .home_data-title {
+    font-size: 3.5rem;
+    font-weight: $font-medium;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

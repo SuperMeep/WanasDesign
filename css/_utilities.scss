@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Tilt+Warp&display=swap");
+
+$header-height: 3rem;
+/* Font and Typography */
+$body-font: "Open Sans", sans-serif;
+$title-font: "Tilt Warp", cursive;
+$biggest-font-size: 2.5rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+/* Font Weight */
+$font-medium: 500;
+$font-semi-bold: 600;
+
+/* Margenes Bottom */
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-25: 1.25rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+
+/* Z Index */
+$z-tooltip: 10;
+$z-fixed: 100;
+
+/* Hover Overlay */
+$img-transition: 0.3s;
+$img-hidden: hidden;
+$img-scale: scale(1.1);
+
+$primary-color: #fd841f;
+$primary2-color: #e14d2a;
+$secondary-color: #035fd4;
+$third-color: #ffc702;
+$body-color: white;
+$title-color: black;
+$text-color: #151515;
+$darktext-color: #919ea1;
+$text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-color;
+  background-color: $body-color;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+img {
+  max-width: 100%;
+  //   height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.section {
+  padding: 4rem 0 4rem;
+}
+
+.section_title {
+  font-size: $h2-font-size;
+  color: $title-color;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: $mb-2;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Buttons==================================================== */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $title-font;
+  background-color: $primary-color;
+  color: $title-color;
+  padding: 1rem 2rem;
+  font-weight: $font-semi-bold;
+  transition: 0.3s;
+  width: 118px;
+  height: 60px;
+}
+
+.button:hover {
+  color: white;
+  background-color: $text-color;
+}
+
+.button--flex {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.button--link {
+  background: none;
+  padding: 0;
+}
+
+.button--link:hover {
+  background: none;
+}

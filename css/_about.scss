@@ -1,0 +1,57 @@
+.about {
+  .about_data {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .about_title {
+    font-family: $title-font;
+    font-size: 3rem;
+  }
+  .about_sub-title {
+    font-family: $body-font;
+  }
+  .about_description {
+    font-family: $body-font;
+    font-size: 16px;
+  }
+  .about_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .box {
+    border: 3px solid black;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 150px;
+      width: 150px;
+      padding-bottom: 20px;
+      object-fit: cover;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-family: $title-font;
+    }
+
+    p {
+      font-family: $body-font;
+      font-size: 0.8rem;
+    }
+  }
+
+  .about_button {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+}

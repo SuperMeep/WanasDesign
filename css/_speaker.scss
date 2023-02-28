@@ -1,0 +1,36 @@
+.speaker {
+  .speaker_data {
+    text-align: center;
+    font-family: $title-font;
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+  .speaker_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .box {
+    border: 3px solid black;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 150px;
+      width: 150px;
+      padding-bottom: 20px;
+      object-fit: cover;
+    }
+
+    p {
+      font-family: $body-font;
+      font-size: 1rem;
+    }
+  }
+}
